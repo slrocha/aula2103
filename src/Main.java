@@ -1,27 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        /*Suprimentos suprimentos = new Suprimentos();
-        suprimentos.setNumero(1);
-        suprimentos.setDescricao("Computador de Mesa");
-        suprimentos.setPreco(-1);
-        suprimentos.setQuantidade(2);
-
+        Suprimentos suprimentos = new Suprimentos(1, "Computador de Mesa", 1500,3);
 
         System.out.println("Informações do item: " + suprimentos.toString());
         System.out.println("Fatura do item " + suprimentos.getDescricao() + " = "
-                + suprimentos.getInvoiceAmount(suprimentos.getQuantidade(), suprimentos.getPreco()));*/
+                + suprimentos.getInvoiceAmount(suprimentos.getQuantidade(), suprimentos.getPreco()));
 
-        Colaborador colaborador = new Colaborador();
-        Colaborador colaborador1 = new Colaborador();
-
-        colaborador1.setNome("Maria");
-        colaborador1.setSobrenome("Aparecida");
-        colaborador1.setSalario(1500);
-
-        colaborador.setNome("Stephanie");
-        colaborador.setSobrenome("Rocha");
-        colaborador.setSalario(4500);
+        /*Colaborador colaborador = new Colaborador("Maria", "Aparecida", 1500);
+        Colaborador colaborador1 = new Colaborador("Stephanie", "Rocha", 4500);
 
         System.out.println("Salario anual do Colaborador" +colaborador1.getNome() +" antes do aumento: "
                 + colaborador1.getSalario());
@@ -34,7 +21,6 @@ public class Main {
         System.out.println("Salario anual do Colaborador " +colaborador1.getNome() +" após do aumento: "
                 + colaborador1.getSalario());
         System.out.println("Salario anual do Colaborador " +colaborador.getNome() +" após do aumento: "
-                + colaborador.getSalario());
-
+                + colaborador.getSalario());*/
     }
 }

@@ -4,10 +4,14 @@ public class Colaborador {
     private String sobrenome;
     private double salario;
 
-    public void  Colaborador(String nome, String sobrenome, double salario){
+    public Colaborador(String nome, String sobrenome, double salario){
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.salario = salario;
+        if (salario < 0) {
+            this.salario = 0.0;
+        } else {
+            this.salario = salario;
+        }
     }
 
     public String getNome() {
