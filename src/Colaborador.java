@@ -50,8 +50,11 @@ public class Colaborador {
                 '}';
     }
 
-    public double aumento(double salario, int aumento){
-        double result = salario*((double) aumento /100);
-        return this.salario + result;
+    public double aumento(int aumento){
+        return salario += salario*((double) aumento /100);
+    }
+
+    public double salarioAnual(){
+        return salario*12;
     }
 }

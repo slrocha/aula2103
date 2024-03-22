@@ -1,26 +1,25 @@
 public class Main {
 
     public static void main(String[] args) {
-        Suprimentos suprimentos = new Suprimentos(1, "Computador de Mesa", 1500,3);
+        Suprimentos suprimentos = new Suprimentos(1, "Computador de Mesa", 1500,2);
 
         System.out.println("Informações do item: " + suprimentos.toString());
-        System.out.println("Fatura do item " + suprimentos.getDescricao() + " = "
-                + suprimentos.getInvoiceAmount(suprimentos.getQuantidade(), suprimentos.getPreco()));
+        System.out.println("Fatura sobre o item " + suprimentos.getDescricao() + " = "+ suprimentos.getInvoiceAmount());
 
-        /*Colaborador colaborador = new Colaborador("Maria", "Aparecida", 1500);
-        Colaborador colaborador1 = new Colaborador("Stephanie", "Rocha", 4500);
+        Colaborador c = new Colaborador("Maria", "Aparecida", 10);
+        Colaborador c1 = new Colaborador("Stephanie", "Rocha", 20);
 
-        System.out.println("Salario anual do Colaborador" +colaborador1.getNome() +" antes do aumento: "
-                + colaborador1.getSalario());
-        System.out.println("Salario anual do Colaborador" +colaborador.getNome() +" antes do aumento: "
-                + colaborador.getSalario());
+        System.out.println("Salario anual do Colaborador " +c1.getNome() +" antes do aumento: "
+                + c1.salarioAnual());
+        System.out.println("Salario anual do Colaborador " +c.getNome() +" antes do aumento: "
+                + c.salarioAnual());
 
-        colaborador1.setSalario(colaborador1.aumento(colaborador1.getSalario(), 10));
-        colaborador.setSalario(colaborador.aumento(colaborador.getSalario(), 10));
+        c1.setSalario(c1.aumento(10));
+        c.setSalario(c.aumento(10));
 
-        System.out.println("Salario anual do Colaborador " +colaborador1.getNome() +" após do aumento: "
-                + colaborador1.getSalario());
-        System.out.println("Salario anual do Colaborador " +colaborador.getNome() +" após do aumento: "
-                + colaborador.getSalario());*/
+        System.out.println("Salario anual do Colaborador " +c1.getNome() +" após do aumento: "
+                + c1.salarioAnual());
+        System.out.println("Salario anual do Colaborador " +c.getNome() +" após do aumento: "
+                + c.salarioAnual());
     }
 }

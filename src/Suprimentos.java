@@ -48,7 +48,7 @@ public class Suprimentos {
         }
     }
 
-    public double getInvoiceAmount(int quantidade, double preco){
+    public double getInvoiceAmount(){
         return quantidade*preco;
     }
 
